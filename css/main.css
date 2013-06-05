@@ -1,0 +1,12 @@
+div#slider {
+	width: 500px;
+	height: 500px;
+}
+
+div#slider .block {
+	background-color: #000;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	display: none;
+}
