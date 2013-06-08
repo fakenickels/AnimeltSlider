@@ -111,12 +111,13 @@ $.fn.animelt = function(props,a,b,c){
 					quickJ.css( 
 						prop, 
 						val[1].replace(rCssValue,function(exp,num,unit){
-							if( isHexColor.test(exp) ) return exp;			
-							var finalvalue = Number(old[indx]) + ( Number(num) - Number(old[indx]) ) * p;			
+							if( isHexColor.test(exp) ) return exp;	
+							var finalvalue = Number(old[indx]||0) + ( Number(num) - Number(old[indx]||0) ) * p;			
 							indx++;
 							return finalvalue + (unit || '' );
 						}) 
 					);
+
 				});
 			});
 		},

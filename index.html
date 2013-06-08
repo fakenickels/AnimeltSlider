@@ -23,7 +23,7 @@
 	<script type='text/javascript' src="js/animeltSlider.js"></script>	
 	<script type='text/javascript'>
 		!function(){
-			var controls = $('#slider').animeltSlider();
+			var controls = $('#slider').animeltSlider({ effect: 'rotate', container: 1 });
 				$('#prev').click( controls.prev );
 				$('#next').click( controls.next );
 		}()
